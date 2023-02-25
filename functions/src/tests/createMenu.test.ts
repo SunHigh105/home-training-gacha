@@ -4,8 +4,12 @@ const trainingList = require('./json/trainingList.json');
 describe('createTrainingMenu', () => {
   test('Category specified', () => {
     const minute = 5;
-    const categories = ['有酸素']
-    const menu = createMenu.createTrainingMenu(trainingList, minute, categories);
+    const categories = ['有酸素'];
+    const menu = createMenu.createTrainingMenu(
+      trainingList,
+      minute,
+      categories
+    );
     console.log(menu);
     expect(true);
   });
@@ -31,9 +35,7 @@ describe('getFilterdCategories', () => {
       ['abs']
     );
 
-    expect(result).toEqual([
-      '腹筋',
-    ]);
+    expect(result).toEqual(['腹筋']);
   });
 
   test('Two filtered conditions exist', () => {
@@ -47,9 +49,6 @@ describe('getFilterdCategories', () => {
       ['abs', 'hip']
     );
 
-    expect(result).toEqual([
-      '腹筋',
-      '尻'
-    ]);
+    expect(result).toEqual(['腹筋', '尻']);
   });
 });

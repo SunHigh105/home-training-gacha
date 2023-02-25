@@ -1,14 +1,14 @@
 interface TrainingPattern {
-  muscle: Array<Number>,
-  cardio: Array<Number>
+  muscle: Array<number>;
+  cardio: Array<number>;
 }
 
 interface Training {
-  category: string,
-  channelId: string,
-  minute: string,
-  thumbnail: string,
-  title: string,
-  url: string,
-  videoId: string,
+  category: string;
+  channelId: string;
+  minute: string;
+  thumbnail: string;
+  title: string;
+  url: string;
+  videoId: string;
 }
